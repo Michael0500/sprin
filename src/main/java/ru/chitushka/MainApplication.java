@@ -9,9 +9,6 @@ import ru.chitushka.services.music.MusicPlayer;
 
 public class MainApplication {
     public static void main(String[] args) {
-        System.out.println("Hello, Spring framework!");
-        System.out.println("");
-
         //ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class); // for JavaConfig file annotation
         ApplicationContext context = new ClassPathXmlApplicationContext("mainapp-context.xml"); // for xml file
         MessageService message = context.getBean(MessageService.class);

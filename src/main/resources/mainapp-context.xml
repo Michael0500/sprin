@@ -3,6 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="messageSer" class="ru.chitushka.services.message.PhoneMessageService"/>
-    <bean id="musicSer" class="ru.chitushka.services.music.RockMusicPlayer"/>
+    <bean id="messageSer" class="ru.chitushka.services.message.FactoryMessage" factory-method="getInstanceMessageService" />
+    <bean id="musicSer" class="ru.chitushka.services.music.ClassicalMusicPlayer" init-method="initMethod"/>
 </beans>

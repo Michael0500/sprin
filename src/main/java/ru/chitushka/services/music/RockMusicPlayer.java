@@ -1,6 +1,8 @@
 package ru.chitushka.services.music;
 
-public class RockMusicPlayer implements MusicPlayer {
+import ru.chitushka.services.InitializationMethod;
+
+public class RockMusicPlayer implements MusicPlayer, InitializationMethod {
     @Override
     public String getMusicType() {
         return "Rock music!!!!";

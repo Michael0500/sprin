@@ -1,6 +1,8 @@
 package ru.chitushka.services.music;
 
-public class DiscoMusicPlayer implements MusicPlayer {
+import ru.chitushka.services.InitializationMethod;
+
+public class DiscoMusicPlayer implements MusicPlayer, InitializationMethod {
     @Override
     public String getMusicType() {
         return "Disco dance";

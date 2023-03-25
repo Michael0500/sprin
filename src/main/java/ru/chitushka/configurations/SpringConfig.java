@@ -21,12 +21,12 @@ public class SpringConfig {
         return new ClassicalMusicPlayer();
     }
 
-   // @Bean
+    @Bean
     public BeanPostProcessor messagePostProcessor() {
         return new BeanPostProcessor() {
             @Override
             public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-                System.out.println("BeanName beforeInitialization = " + beanName);
+                System.out.println("beforeInitialization: " + beanName);
 
                 return bean;
 
@@ -34,7 +34,7 @@ public class SpringConfig {
 
             @Override
             public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-                System.out.println("BeanName afterInitialization = " + beanName);
+                System.out.println("afterInitialization: " + beanName);
 
                 return bean;
             }
