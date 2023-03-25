@@ -1,4 +1,4 @@
-package ru.chitushka.services;
+package ru.chitushka.old.services;
 
 import jakarta.annotation.PreDestroy;
 

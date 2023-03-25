@@ -1,13 +1,13 @@
-package ru.chitushka.configurations;
+package ru.chitushka.old.configurations;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.chitushka.services.message.HelloMessageService;
-import ru.chitushka.services.message.MessageService;
-import ru.chitushka.services.music.ClassicalMusicPlayer;
-import ru.chitushka.services.music.MusicPlayer;
+import ru.chitushka.old.services.message.HelloMessageService;
+import ru.chitushka.old.services.message.MessageService;
+import ru.chitushka.old.services.music.ClassicalMusicPlayer;
+import ru.chitushka.old.services.music.MusicPlayer;
 
 @Configuration
 public class SpringConfig {

@@ -1,8 +1,7 @@
-package ru.chitushka.services.music;
+package ru.chitushka.old.services.music;
 
-import jakarta.annotation.PreDestroy;
-import ru.chitushka.services.DestroyMethod;
-import ru.chitushka.services.InitMethod;
+import ru.chitushka.old.services.InitMethod;
+import ru.chitushka.old.services.DestroyMethod;
 
 public class ClassicalMusicPlayer implements MusicPlayer, InitMethod, DestroyMethod {
     @Override
