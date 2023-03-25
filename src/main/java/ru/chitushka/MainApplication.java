@@ -21,5 +21,11 @@ public class MainApplication {
 
         System.out.println("Music service: ");
         System.out.println(music.getMusicType());
+
+        System.out.println("");
+//
+        MusicPlayer player1 = context.getBean(MusicPlayer.class);
+        MusicPlayer player2 = context.getBean(MusicPlayer.class);
+        System.out.println(player1 == player2);
     }
 }
