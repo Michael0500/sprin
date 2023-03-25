@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book isdn="ISDN-100">
+        <title>This is title 1 from XML</title>
+        <year>2021</year>
+        <authors>
+            <author>Solovey</author>
+            <author>Markov</author>
+        </authors>
+    </book>
+
+    <book isdn="ISDN-200">
+        <title>This is title 2 from XML</title>
+        <year>2022</year>
+        <authors>
+            <author>Nosov</author>
+        </authors>
+    </book>
+
+    <book isdn="ISDN-300">
+        <title>This is title 3 from XML</title>
+        <year>2023</year>
+        <authors>
+            <author/>
+        </authors>
+    </book>
+</books>
